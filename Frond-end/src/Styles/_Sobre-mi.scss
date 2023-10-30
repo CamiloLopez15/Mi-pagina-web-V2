@@ -1,0 +1,205 @@
+@import "./Linea-de-tiempo";
+.SobreMi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background: $colorBlack;
+  animation-name: actualizacionEstado;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+.SobreMi-h1 {
+  color: $colorBlanco;
+  font-size: 3em;
+  font-weight: 400;
+  b {
+    color: $colorAmarillo;
+    font-weight: 400;
+  }
+}
+
+.SobreMi-h1__descripcionContenedor {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 3% 0;
+  padding: 2% 2em;
+  .descripcionContenedor__descripcion {
+    width: 50%;
+    margin-right: 10%;
+    h2 {
+      margin-bottom: 6%;
+      font-weight: 400;
+      font-size: 1.6em;
+      b {
+        font-weight: 400;
+        color: $colorAmarillo;
+      }
+    }
+    p {
+      opacity: 0.7;
+      margin-bottom: 5%;
+    }
+    a {
+      background: $colorAmarillo;
+      padding: 0.5em;
+      font-size: 18px;
+      border-radius: 5px;
+      margin: 5% 25% 0;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+  }
+  img {
+    border-radius: 20px;
+    width: 30%;
+  }
+}
+
+
+
+@media only screen and (max-width: 1023px) {
+  .SobreMi-h1__descripcionContenedor {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    .descripcionContenedor__descripcion {
+      width: 100%;
+      order: 2;
+      margin: 10% 0 0;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      a {
+        margin: 5% 0%;
+      }
+    }
+    img {
+      width: 80%;
+      order: 1;
+    }
+  }
+}
+
+.SobreMi__habilidades {
+  margin-top: 3%;
+  width: 100%;
+  .SobreMi__habilidades-h2 {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 100;
+    opacity: 0.88;
+    b {
+      font-weight: 100;
+      color: $colorAmarillo;
+    }
+  }
+  .SobreMi__habilidades__container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2em 0;
+    .SobreMi__habilidades__container__item {
+      display: flex;
+      width: 37.5%;
+      flex-direction: column;
+      align-items: flex-start;
+      // justify-content: center;
+      margin-bottom: 2%;
+      div {
+        display: flex;
+        background: #1E1E1E;
+        width: 100%;
+        height: 2em;
+        border-radius: 50px;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 0.3em;
+        div {
+          background: $colorAmarillo;
+          height: 1.5em;
+          text-align: center;
+        }
+        .HTML {
+          width: 90%;
+        }
+        .CSS {
+          width: 90%;
+        }
+        .JavaScript {
+          width: 88%;
+        }
+        .React {
+          width: 85%;
+        }
+        .J-Query {
+          width: 80%;
+        }
+        .Canvas {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .SobreMi__habilidades {
+    margin-top: 10%;
+    .SobreMi__habilidades__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      .SobreMi__habilidades__container__item {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .SobreMi-h1__descripcionContenedor {
+    
+    .descripcionContenedor__descripcion {
+      h2 {
+        font-size: 1.1em;
+        width: 100%;
+        text-align: start;
+      }
+      p {
+        font-size: 1em;
+        text-align: start;
+      }
+      a {
+        width: 90%;
+        margin: 10% 0;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

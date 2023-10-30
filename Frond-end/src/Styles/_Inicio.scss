@@ -1,0 +1,129 @@
+.Inicio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 120px);
+  background: $colorBlack;
+  animation-name: actualizacionEstado;
+  animation-duration: .8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+/*Portatiles y monitores */
+.container__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(85vh - 120px);
+}
+
+.container__info__redes {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em;
+  width: 10%;
+  .container__info__redes-elemento {
+    font-size: 21px;
+  }
+}
+
+.container__info__name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  color: $colorGris;
+  width: 60%;
+  .container__info__name-h1 b {
+    color: $colorAmarillo;
+  }
+}
+.container__info__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  width: 10%;
+  // position: relative;
+  img {
+    position: absolute;
+    width: 350px;
+    border-radius: 50%;
+    top: 24%;
+    left: 74%;
+    right: 0;
+  }
+}
+.container__info__name-h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/*Tablets y Mobiles*/
+@media only screen and (max-width: 1023px) {
+  .container__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .container__info__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92%;
+    font-size: 2em;
+    order: 1;
+
+  }
+
+  .container__info__redes {
+    display: flex;
+    height: 8%;
+    width: 15%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    order: 2;
+  }
+
+  .container__info__img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container__info__name {
+    font-size: 1.4em;
+  }
+  .container__info__redes {
+    padding: 0;
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .container__info__name {
+    font-size: 1.1em;
+  }
+
+  .container__info__name-h2 {
+    font-size: .9em;
+  }
+
+  .container__info__redes {
+    width: 40%;
+  }
+}

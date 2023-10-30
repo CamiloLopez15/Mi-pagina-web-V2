@@ -1,0 +1,191 @@
+.SobreMi__historia {
+  display: flex;
+  margin: 5% 0;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.timelineH2 {
+  text-align: center;
+  font-size: 2.2em;
+  font-weight: 100;
+  opacity: 0.88;
+  b {
+    font-weight: 100;
+    color: $colorAmarillo;
+  }
+}
+
+.timeline {
+  position: relative;
+  margin: 5px auto;
+  padding: 40px 0;
+  width: 1000px;
+  box-sizing: border-box;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: $colorGris
+}
+
+.timeline ul {
+  margin: 0;
+  padding: 0;
+}
+
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.content {
+  padding-bottom: 20px;
+}
+
+.content a {
+  color: $colorAmarillo;
+  font-weight: 600;
+}
+
+.timeline ul li:nth-child(odd):before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: $colorAmarillo;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(252, 163, 17, 0.2);
+}
+
+.timeline ul li:nth-child(even):before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: $colorAmarillo;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(252, 163, 17, 0.2);
+}
+
+.timeline ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color: $colorAmarillo;
+  font-size: 20px;
+}
+
+.timeline ul li p {
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.timeline ul li .time h4 {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.timeline ul li:nth-child(odd) .time {
+  position: absolute;
+  top: 14px;
+  right: -245px;
+  margin: 0;
+  padding: 8px 16px;
+  background: $colorAmarillo;
+  color: $colorBlanco;
+  border-radius: 18px;
+  opacity: 0.88;
+  box-sizing: 0 0 0 3px rgba(252, 163, 17, 0.3);
+}
+
+.last-time {
+  right: -265px !important;
+}
+
+.timeline ul li:nth-child(even) .time {
+  position: absolute;
+  top: 12px;
+  left: -170px;
+  margin: 0;
+  padding: 8px 16px;
+  opacity: 0.88;
+  background: $colorAmarillo;
+  color: $colorBlanco;
+  border-radius: 18px;
+  // box-sizing: 0 0 0 3px rgba(252, 163, 17, 0.3);
+}
+
+
+@media (max-width: 1000px) {
+  .timeline {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .timelineH2 {
+    font-size: 2em
+  }
+  .timeline {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .timeline:before {
+    left: 20px;
+  }
+  .timeline ul li:nth-child(even),
+  .timeline ul li:nth-child(odd) {
+    width: 100%;
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+  .timeline ul li:nth-child(even):before,
+  .timeline ul li:nth-child(odd):before {
+    top: -18px;
+    left: 16px;
+  }
+  .timeline ul li:nth-child(even) .time,
+  .timeline ul li:nth-child(odd) .time {
+    top: -30px;
+    left: 50px;
+    right: inherit;
+  }
+  .last-time {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .last-time {
+    width: 81.5%;
+  }
+}
+

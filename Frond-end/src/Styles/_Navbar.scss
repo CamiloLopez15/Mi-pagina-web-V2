@@ -1,0 +1,42 @@
+.container__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.container__menu-logo {
+  display: block;
+  width: 80px;
+  transition: transform 1.5s;
+}
+
+.container__menu-logo:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+}
+
+.container__menu__nav {
+  font-size: 50px;
+  color: $colorGris;
+  font-weight: 1px;
+  .container__menu__nav-menu {
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+  .container__menu__nav-menu:hover {
+    transform: rotate(90deg);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container__menu {
+    padding: .8em;
+  }
+  .container__menu__nav-menu {
+    width: 35px;
+    height: 35px;
+  }
+}

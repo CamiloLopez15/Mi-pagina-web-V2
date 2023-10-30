@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.menu {
+  width: 100%;
+  height: 90%;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5 all;
+  animation-name: entradaMenu;
+  animation-duration: .6s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+
+.menu__ul {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  z-index: 20;
+  li {
+    color: $colorGris;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    list-style: none;
+    font-size: 30px;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: $colorGris;
+    }
+  }
+  li:hover {
+    color: $colorBlanco
+  }
+}
+
+.textoCambiante {
+  display: grid;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: 120px;
+  width: 46%;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 0.03em;
+  color: $colorGris;
+  margin: 0 auto;
+  position: absolute;
+  top: 40%;
+  left: 27%;
+  right: 27%;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+//animación para los li
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.fade-enter-active {
+  opacity: 0.1;
+  transform: translateX(0%);
+}
+.fade-exit {
+  opacity: 0.1;
+  transform: translateX(0%);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 500ms, transform 700ms;
+}
+
+// Tablets y mobile
+
+@media only screen and (max-width: 1200px) {
+  .textoCambiante {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .menu__ul li {
+    font-size: 1.6em;
+  }
+  .textoCambiante {
+    font-size: 3.45em;
+    top: 45%;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+@keyframes entradaMenu {
+  from {
+    margin-top: -100%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}

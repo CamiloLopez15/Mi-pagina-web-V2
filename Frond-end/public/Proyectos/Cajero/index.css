@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+}
+
+.contenedor {
+  display: flex;
+  width: 65vw;
+  height: 63vh;
+  margin: 50px auto;
+  flex-direction: row;
+  outline: 15px solid #252422;
+}
+
+.lateral {
+  display: inline-flex;
+  min-width: 15%;
+  height: 100%;
+  background: #252422;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.botonesDeAdorno {
+  display: block;
+  width: 90%;
+  height: 15%;
+  background: #403D39;
+  margin: 35px auto;
+}
+
+.contenedor-info {
+  display: flex;
+  min-width: 70%;
+  height: 100%;
+  background: #FFFCF2;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.contenedor-info_h1 {
+  font-size: 2.5em;
+  color: #FFFCF2;
+  background: #EB5E28;
+  border-radius: 10px;
+  padding: 6%;
+}
+
+#cantidad-Retirar {
+  outline: none;
+  border: none;
+  background: #CCC5B9;
+  border-radius: 47%;
+  padding: 25px;
+  font-size: 90%;
+}
+
+#cantidad-Retirar::-webkit-outer-spin-button,
+#cantidad-Retirar::-webkit-inner-spin-button {
+  margin: 0;
+  color: #EB5E28;
+}
+
+#enviar {
+  font-size: 18px;
+  padding: 15px 18px;
+  border-radius: 10px;
+  background: #EB5E28;
+  border: none;
+  cursor: hand;
+}
+
+#enviar:hover {
+  cursor: hand;
+}
+
+.bandeja {
+  display: block;
+  width: 65vw;
+  min-height: 40vh;
+  margin: 20px auto;
+  background: #6E6E6E;
+  border: 5px outset #403D39;
+  padding: 10px;
+}
+
+.billete {
+  margin: 10px auto;
+}
+
+.InsuficienteDinero {
+  font-size: 29px;
+  padding: 18px;
+  background: #EB5E28;
+  text-align: center;
+  margin: 19% auto;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    width: 75vw;
+    height: 43vh;
+    margin: 50px auto;
+  }
+  #cantidad-Retirar {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .contenedor-info_h1 {
+    text-align: center;
+    font-size: 1.8em;
+  }
+  .InsuficienteDinero {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 400px) {
+  .contenedor {
+    width: 80vw;
+    height: 33vh;
+    margin: 50px auto;
+  }
+  #cantidad-Retirar {
+    padding: 3px;
+    border-radius: 10px;
+    font-size: 75%;
+  }
+  .contenedor-info_h1 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  #enviar {
+    font-size: 80%;
+    padding: 10px;
+  }
+}/*# sourceMappingURL=index.css.map */

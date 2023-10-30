@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="juez.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Policía De Alcachofa</h3>
+        <p>Este es un sistema espacial para detectar la posibilidad de que la persona cometa un delito de hurto.</p>
+        <div class="container__inputs">
+            <input type="text" placeholder="Nombre de la persona" class="container__inputs-nombre" required="">
+            <input type="number" placeholder="Edad de la persona" class="container__inputs-edad" required="">
+            <input type="number" placeholder="Delitos cometidos" class="container__inputs-delitos" required="">
+            <div class="container__inputs__busqueda">
+                <select class="container__inputs__busqueda__select" required="">
+                    <option value="">¿Está siendo buscado por la policía?</option>
+                    <option value="true">Si</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+        </div>
+        <button class="examinar" type="button">Examinar</button>
+        <span class="Respuesta"></span>
+    </div>
+    <script src="juez.js"></script>
+</body>
+</html>
