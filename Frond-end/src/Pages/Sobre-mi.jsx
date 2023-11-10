@@ -2,15 +2,17 @@ import React from "react";
 import FotoPerfil from "../assets/Foto de perfil-1.jpg";
 import Footer from "../Components/Footer";
 import hojaDeVida from "../assets/Hoja_de_vida_Camilo_Lopez.pdf";
+import Certificado from "../Components/Certificado";
+import CertificadoJavaScript from "../assets/Certificados/Certificado-freecodecamp-JavaScript.png";
 
 function SobreMi() {
   return (
     <>
-      <div className="SobreMi">
+      <main className="SobreMi">
         <h1 className="SobreMi-h1">
           Sobre <b>mí</b>
         </h1>
-        <div className="SobreMi-h1__descripcionContenedor">
+        <section className="SobreMi-h1__descripcionContenedor">
           <div className="descripcionContenedor__descripcion">
             <h2>
               Soy un <b>desarrollador web Full Stack</b> que actualmente vive en
@@ -32,8 +34,8 @@ function SobreMi() {
             </a>
           </div>
           <img src={FotoPerfil} />
-        </div>
-        <div className="SobreMi__historia" id="Sobre-mi">
+        </section>
+        <section className="SobreMi__historia" id="Sobre-mi">
           <h2 className="timelineH2">
             Mi <b>historia</b>
           </h2>
@@ -106,8 +108,8 @@ function SobreMi() {
               <div style={{ clear: "both" }}></div>
             </ul>
           </div>
-        </div>
-        <div className="SobreMi__habilidades">
+        </section>
+        <section className="SobreMi__habilidades">
           <h2 className="SobreMi__habilidades-h2">
             Mis <b>habilidades</b>
           </h2>
@@ -150,8 +152,23 @@ function SobreMi() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+
+        {/* <section className="sobreMi__certificados">
+          <h2 className="SobreMi__certificados-h2">
+            Mis <b>certificados</b>
+          </h2>
+          <article className="SobreMi__certificados__container">
+          <Certificado
+            img={CertificadoJavaScript}
+            text={
+              "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia accusantium doloremque ex non adipisci id, dolor sed libero architecto labore iusto natus atque. Illo rerum hic facilis id earum debitis"
+            }
+          />
+          </article>
+        </section> */}
+
+      </main>
       <Footer />
     </>
   );

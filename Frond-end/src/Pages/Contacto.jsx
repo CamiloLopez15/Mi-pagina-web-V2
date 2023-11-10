@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Footer from "./../Components/Footer";
 import { MdMap, MdContactMail, MdContactPhone, MdContacts } from "react-icons/md";
 import axios from "axios";
@@ -30,6 +30,10 @@ function Contacto() {
     navigate('/contacto')
     alert('Mensaje enviado')
   }
+
+  useEffect(()=> {
+    alert('Por ahora este contacto no funciona, ya que, el hosting no permite el uso de Backend')
+  }, [])
 
   return (
     <>

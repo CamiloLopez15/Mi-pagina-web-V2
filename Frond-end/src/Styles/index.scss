@@ -33,7 +33,9 @@ html {
   background: $colorBlack;
   overflow-x: hidden;
   // overflow-y: hidden;
-  
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 #root::-webkit-scrollbar {

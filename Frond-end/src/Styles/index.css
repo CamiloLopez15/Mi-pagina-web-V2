@@ -9,6 +9,8 @@
 
 .container__menu-logo {
   display: block;
+  position: relative;
+  z-index: 30;
   width: 80px;
   transition: transform 1.5s;
 }
@@ -177,7 +179,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 3em;
+  padding: 2em;
   width: 10%;
 }
 .container__info__redes .container__info__redes-elemento {
@@ -208,11 +210,16 @@
 }
 .container__info__img img {
   position: absolute;
-  width: 350px;
-  border-radius: 50%;
-  top: 24%;
-  left: 74%;
-  right: 0;
+  width: auto;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  transform: scaleX(-1);
+  z-index: 20;
+  animation-name: actualizacionEstado;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
 }
 
 .container__info__name-h2 {
@@ -528,6 +535,38 @@
   width: 30%;
 }
 
+.sobreMi__certificados {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 3% 0;
+  padding: 2% 2em;
+}
+.sobreMi__certificados .SobreMi__certificados-h2 {
+  margin-bottom: 6%;
+  font-weight: 400;
+  font-size: 2.15em;
+}
+.sobreMi__certificados .SobreMi__certificados-h2 b {
+  font-weight: 400;
+  color: #fca311;
+}
+.sobreMi__certificados .SobreMi__certificados-certificado {
+  box-shadow: 0px 4px 4px 0px #fca311;
+  width: 30%;
+}
+.sobreMi__certificados .SobreMi__certificados-certificado img {
+  border-radius: 20px;
+  width: 80%;
+}
+.sobreMi__certificados .SobreMi__certificados-certificado p {
+  opacity: 0.7;
+  margin-bottom: 5%;
+}
+
 @media only screen and (max-width: 1023px) {
   .SobreMi-h1__descripcionContenedor {
     width: 100%;
@@ -587,7 +626,7 @@
 }
 .SobreMi__habilidades .SobreMi__habilidades__container .SobreMi__habilidades__container__item div {
   display: flex;
-  background: #1E1E1E;
+  background: #1e1e1e;
   width: 100%;
   height: 2em;
   border-radius: 50px;
@@ -1035,6 +1074,7 @@
   margin-top: 2%;
   align-items: center;
   justify-content: center;
+  padding: 2em 0;
 }
 
 * {
@@ -1054,6 +1094,9 @@ html {
   height: 100vh;
   background: #000000;
   overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 #root::-webkit-scrollbar {

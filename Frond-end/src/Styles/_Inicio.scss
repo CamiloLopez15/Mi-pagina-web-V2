@@ -5,7 +5,7 @@
   height: calc(100% - 120px);
   background: $colorBlack;
   animation-name: actualizacionEstado;
-  animation-duration: .8s;
+  animation-duration: 0.8s;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
 }
@@ -25,7 +25,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 3em;
+  padding: 2em;
   width: 10%;
   .container__info__redes-elemento {
     font-size: 21px;
@@ -55,11 +55,18 @@
   // position: relative;
   img {
     position: absolute;
-    width: 350px;
-    border-radius: 50%;
-    top: 24%;
-    left: 74%;
-    right: 0;
+    width: auto;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    transform: scaleX(-1);
+    z-index: 20;
+    animation-name: actualizacionEstado;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    // border-radius: 50%;
+    // right: 0;
   }
 }
 .container__info__name-h2 {
@@ -85,7 +92,6 @@
     height: 92%;
     font-size: 2em;
     order: 1;
-
   }
 
   .container__info__redes {
@@ -120,7 +126,7 @@
   }
 
   .container__info__name-h2 {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 
   .container__info__redes {
