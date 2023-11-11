@@ -1,9 +1,9 @@
+import menuAbrir from "./assets/Logos/Menu-abrir.png";
 import Inicio from "./Pages/Inicio";
 import SobreMi from "./Pages/Sobre-mi";
 import Portafolio from "./Pages/Portafolio";
 import Contacto from "./Pages/Contacto";
 import Navbar from "./Components/navbar";
-import menuAbrir from "./assets/Menu-abrir.png";
 import Menu from "./Components/Menu";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";

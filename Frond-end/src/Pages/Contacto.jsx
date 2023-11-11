@@ -32,7 +32,7 @@ function Contacto() {
   }
 
   useEffect(()=> {
-    alert('Por ahora este contacto no funciona, ya que, el hosting no permite el uso de Backend')
+    alert('Por ahora este contacto no funciona, ya que, el hosting no permite el uso de Backend');
   }, [])
 
   return (

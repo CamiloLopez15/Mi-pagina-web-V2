@@ -1,16 +1,14 @@
-import React from 'react'
-
-function Certificado({img, alt, text}) {
+function Certificado({ img, text }) {
   return (
-    <section className='SobreMi__certificados-certificado'>
+    <section
+      className="SobreMi__certificados-certificado"
+    >
       <figure>
-        <img src={img} alt={alt} />
+        <img src={img} alt={text} />
       </figure>
-      <p>
-        {text}
-      </p>
+        <h3 className="SobreMi__certificados-certificado-p">{text}</h3>
     </section>
-  )
+  );
 }
 
-export default Certificado
+export default Certificado;

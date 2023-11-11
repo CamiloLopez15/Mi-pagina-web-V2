@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { BsInstagram, BsLinkedin, BsTwitter, BsGithub } from "react-icons/bs";
-import FotoPerfil from "../assets/Foto de perfil-2.jpg";
+import FotoPerfil from "../assets/Fotos de Perfil/Foto de perfil-2.jpg";
 import Typed from "typed.js";
 
 function Inicio() {

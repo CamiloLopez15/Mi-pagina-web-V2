@@ -79,24 +79,46 @@
   padding: 2% 2em;
   .SobreMi__certificados-h2 {
     margin-bottom: 6%;
-    font-weight: 400;
-    font-size: 2.15em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+    opacity: 0.88;
     b {
-      font-weight: 400;
+      font-weight: 100;
       color: $colorAmarillo;
     }
   }
-  .SobreMi__certificados-certificado {
-    box-shadow: 0px 4px 4px 0px $colorAmarillo;
-    width: 30%;
-    img {
+  .SobreMi__certificados__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    .SobreMi__certificados-certificado {
+      padding: 1em;
+      width: 390px;
+      height: auto;
+      z-index: 20;
+      transition: transform 150ms;
+      background: #0d0d0d;
       border-radius: 20px;
-      width: 80%;
+      img {
+        border-radius: 20px;
+        width: 100%;
+        object-fit: contain;
+      }
+      h3 {
+        font-size: 0.9em;
+        font-weight: 600;
+        text-align: center;
+        color: $colorGris;
+        b {
+          color: $colorAmarillo;
+        }
+      }
     }
-    p {
-      opacity: 0.7;
-      margin-bottom: 5%;
-    }
+  }
+  .SobreMi__certificados-certificado:hover {
+    transform: scale(1.1);
   }
 }
 
@@ -133,7 +155,7 @@
   width: 100%;
   .SobreMi__habilidades-h2 {
     text-align: center;
-    font-size: 2.2em;
+    font-size: 2em;
     font-weight: 100;
     opacity: 0.88;
     b {
@@ -210,7 +232,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
   .SobreMi-h1__descripcionContenedor {
     .descripcionContenedor__descripcion {
       h2 {
@@ -229,6 +251,17 @@
     }
     img {
       width: 100%;
+    }
+  }
+  .sobreMi__certificados {
+    .SobreMi__certificados__container {
+      .SobreMi__certificados-certificado {
+        width: auto;
+        height: auto;
+        img {
+          object-fit: contain;
+        }
+      }
     }
   }
 }

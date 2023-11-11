@@ -1,9 +1,11 @@
 import React from "react";
-import FotoPerfil from "../assets/Foto de perfil-1.jpg";
+import FotoPerfil from "../assets/Fotos de Perfil/Foto de perfil-1.jpg";
 import Footer from "../Components/Footer";
 import hojaDeVida from "../assets/Hoja_de_vida_Camilo_Lopez.pdf";
 import Certificado from "../Components/Certificado";
 import CertificadoJavaScript from "../assets/Certificados/Certificado-freecodecamp-JavaScript.png";
+import CertificadoReact from "../assets/Certificados/Certificado-freecodecamp-React.png";
+import CertificadoJavaScriptPlatzi from "../assets/Certificados/Certificado-platzi-JavaScript.png";
 
 function SobreMi() {
   return (
@@ -154,20 +156,37 @@ function SobreMi() {
           </div>
         </section>
 
-        {/* <section className="sobreMi__certificados">
+        <section className="sobreMi__certificados">
           <h2 className="SobreMi__certificados-h2">
             Mis <b>certificados</b>
           </h2>
           <article className="SobreMi__certificados__container">
-          <Certificado
-            img={CertificadoJavaScript}
-            text={
-              "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia accusantium doloremque ex non adipisci id, dolor sed libero architecto labore iusto natus atque. Illo rerum hic facilis id earum debitis"
-            }
-          />
+            <Certificado
+              img={CertificadoJavaScript}
+              text={
+                <>
+                  Certificado de JavaScript de <b>FreeCodeCamp</b>
+                </>
+              }
+            />
+            <Certificado
+              img={CertificadoReact}
+              text={
+                <>
+                  Certificado de React de <b>FreeCodeCamp</b>
+                </>
+              }
+            />
+            <Certificado
+              img={CertificadoJavaScriptPlatzi}
+              text={
+                <>
+                  Certificado de JavaScript de <b>Platzi</b>
+                </>
+              }
+            />
           </article>
-        </section> */}
-
+        </section>
       </main>
       <Footer />
     </>

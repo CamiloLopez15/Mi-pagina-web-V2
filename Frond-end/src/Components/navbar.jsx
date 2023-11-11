@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/logo-sin-fondo.png";
+import logo from "./../assets/Logos/logo-sin-fondo.png";
 import { Link } from 'react-router-dom';
 
 function Navbar({changeState, newState, logoMenu}) {

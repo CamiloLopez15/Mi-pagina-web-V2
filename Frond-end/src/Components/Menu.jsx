@@ -1,4 +1,4 @@
-import menuCerrar from "./../assets/Menu-cerrar.png";
+import menuCerrar from "./../assets/Logos/Menu-cerrar.png";
 import React, { useState, useRef } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import Navbar from "./navbar";

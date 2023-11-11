@@ -547,24 +547,47 @@
 }
 .sobreMi__certificados .SobreMi__certificados-h2 {
   margin-bottom: 6%;
-  font-weight: 400;
-  font-size: 2.15em;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+  opacity: 0.88;
 }
 .sobreMi__certificados .SobreMi__certificados-h2 b {
-  font-weight: 400;
+  font-weight: 100;
   color: #fca311;
 }
-.sobreMi__certificados .SobreMi__certificados-certificado {
-  box-shadow: 0px 4px 4px 0px #fca311;
-  width: 30%;
+.sobreMi__certificados .SobreMi__certificados__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
 }
-.sobreMi__certificados .SobreMi__certificados-certificado img {
+.sobreMi__certificados .SobreMi__certificados__container .SobreMi__certificados-certificado {
+  padding: 1em;
+  width: 390px;
+  height: auto;
+  z-index: 20;
+  transition: transform 150ms;
+  background: #0d0d0d;
   border-radius: 20px;
-  width: 80%;
 }
-.sobreMi__certificados .SobreMi__certificados-certificado p {
-  opacity: 0.7;
-  margin-bottom: 5%;
+.sobreMi__certificados .SobreMi__certificados__container .SobreMi__certificados-certificado img {
+  border-radius: 20px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.sobreMi__certificados .SobreMi__certificados__container .SobreMi__certificados-certificado h3 {
+  font-size: 0.9em;
+  font-weight: 600;
+  text-align: center;
+  color: #D8D8D8;
+}
+.sobreMi__certificados .SobreMi__certificados__container .SobreMi__certificados-certificado h3 b {
+  color: #fca311;
+}
+.sobreMi__certificados .SobreMi__certificados-certificado:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1023px) {
@@ -600,7 +623,7 @@
 }
 .SobreMi__habilidades .SobreMi__habilidades-h2 {
   text-align: center;
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: 100;
   opacity: 0.88;
 }
@@ -674,7 +697,7 @@
     width: 80%;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
   .SobreMi-h1__descripcionContenedor .descripcionContenedor__descripcion h2 {
     font-size: 1.1em;
     width: 100%;
@@ -690,6 +713,14 @@
   }
   .SobreMi-h1__descripcionContenedor img {
     width: 100%;
+  }
+  .sobreMi__certificados .SobreMi__certificados__container .SobreMi__certificados-certificado {
+    width: auto;
+    height: auto;
+  }
+  .sobreMi__certificados .SobreMi__certificados__container .SobreMi__certificados-certificado img {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 .portafolioContenedor {
@@ -980,7 +1011,7 @@
   flex-direction: column;
   max-width: 450px;
   margin: 0 1em 0 0;
-  background: url("src/assets/fondo-formulario-3.jpg");
+  background: url("src/assets/Logos/fondo-formulario-3.jpg");
   background-position: center 30%;
   background-origin: border-box;
   background-repeat: no-repeat;
