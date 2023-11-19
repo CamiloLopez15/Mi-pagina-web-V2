@@ -563,9 +563,15 @@
   justify-content: center;
 }
 .sobreMi__certificados .SobreMi__certificados__container .SobreMi__certificados-certificado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1em;
   width: 390px;
   height: auto;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  max-height: 400px;
   z-index: 20;
   transition: transform 150ms;
   background: #0d0d0d;
@@ -574,6 +580,9 @@
 .sobreMi__certificados .SobreMi__certificados__container .SobreMi__certificados-certificado img {
   border-radius: 20px;
   width: 100%;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  max-height: 300px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -778,7 +787,7 @@
 .portafolioContenedor .portafolioContenedor__proyectos .portafolioContenedor__proyectos__proyecto .portafolioContenedor__proyectos__proyecto__texto {
   width: 500px;
   height: auto;
-  max-height: 280px;
+  max-height: 300px;
   padding: 1.5em;
   border-radius: 4px;
   background: #000;
@@ -1106,6 +1115,17 @@
   align-items: center;
   justify-content: center;
   padding: 2em 0;
+}
+.container-footer .container-footer-a {
+  text-decoration: none;
+  transition: transform 200ms;
+  transition: -webkit-text-decoration 200ms;
+  transition: text-decoration 200ms;
+  transition: text-decoration 200ms, -webkit-text-decoration 200ms;
+}
+.container-footer .container-footer-a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 
 * {

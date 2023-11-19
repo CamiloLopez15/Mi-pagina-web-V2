@@ -1,13 +1,11 @@
 import React from "react";
-import { BsInstagram, BsLinkedin, BsTwitter } from "react-icons/bs";
-import { RiSendPlaneFill } from "react-icons/ri";
 
-function Footer({ changeState }) {
+function Footer() {
   return (
     <>
-      <div className="container-footer">
-        <span className="container-footer-span">© Camilo López</span>
-      </div>
+      <footer className="container-footer">
+        <a className="container-footer-a" target="_blank" rel="noopener noreferrer" href="https://github.com/CamiloLopez15">© Camilo López</a>
+      </footer>
     </>
   )
 }

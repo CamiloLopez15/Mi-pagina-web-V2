@@ -1,11 +1,23 @@
 import React from "react";
 import FotoPerfil from "../assets/Fotos de Perfil/Foto de perfil-1.jpg";
 import Footer from "../Components/Footer";
+
+//Assets
 import hojaDeVida from "../assets/Hoja_de_vida_Camilo_Lopez.pdf";
 import Certificado from "../Components/Certificado";
 import CertificadoJavaScript from "../assets/Certificados/Certificado-freecodecamp-JavaScript.png";
 import CertificadoReact from "../assets/Certificados/Certificado-freecodecamp-React.png";
 import CertificadoJavaScriptPlatzi from "../assets/Certificados/Certificado-platzi-JavaScript.png";
+import CertificadoFundamentosProgramacionGoogle from "../assets/Certificados/Certificado-fundamentos-programacion-google.png";
+import CertificadoAnimacionesGoogle from "../assets/Certificados/Certificado-animaciones-google.png";
+import CertificadoMetodosArreglosGoogle from "../assets/Certificados/Certificado-metodos-arreglos-google.png";
+import CertificadoIntroduccionEntrevistaGoogle from "../assets/Certificados/Certificado-introduccion-entrevista-google.png";
+
+import CertificadoFundamentosProgramacionIIGoogle from "../assets/Certificados/Certificado-fundamentos-programacion-II-google.png";
+
+import CertificadoAnimacionesIIGoogle from "../assets/Certificados/Certificado-animaciones-II-google.png";
+
+import CertificadoCodigoDepuracionGoogle from "../assets/Certificados/Certificado-codigo-depuracion-google.png";
 
 function SobreMi() {
   return (
@@ -182,6 +194,64 @@ function SobreMi() {
               text={
                 <>
                   Certificado de JavaScript de <b>Platzi</b>
+                </>
+              }
+            />
+            <Certificado
+              img={CertificadoFundamentosProgramacionGoogle}
+              text={
+                <>
+                  Certificado de Fundamentos de Programación de <b>Google</b>
+                </>
+              }
+            />
+
+            <Certificado
+              img={CertificadoAnimacionesGoogle}
+              text={
+                <>
+                  Certificado de Animaciones de <b>Google</b>
+                </>
+              }
+            />
+
+            <Certificado
+              img={CertificadoMetodosArreglosGoogle}
+              text={
+                <>
+                  Certificado de Métodos de Arreglos de <b>Google</b>
+                </>
+              }
+            />
+            <Certificado
+              img={CertificadoIntroduccionEntrevistaGoogle}
+              text={
+                <>
+                  Certificado de Introducción a Entrevistas de <b>Google</b>
+                </>
+              }
+            />
+            <Certificado
+              img={CertificadoFundamentosProgramacionIIGoogle}
+              text={
+                <>
+                  Certificado de Fundamentos de Programación II de <b>Google</b>
+                </>
+              }
+            />
+            <Certificado
+              img={CertificadoAnimacionesIIGoogle}
+              text={
+                <>
+                  Certificado de Animaciones II de <b>Google</b>
+                </>
+              }
+            />
+            <Certificado
+              img={CertificadoCodigoDepuracionGoogle}
+              text={
+                <>
+                  Certificado de Código de Depuración de <b>Google</b>
                 </>
               }
             />

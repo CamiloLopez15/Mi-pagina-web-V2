@@ -94,9 +94,14 @@
     gap: 2em;
     justify-content: center;
     .SobreMi__certificados-certificado {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       padding: 1em;
       width: 390px;
       height: auto;
+      max-width: max-content;
+      max-height: 400px;
       z-index: 20;
       transition: transform 150ms;
       background: #0d0d0d;
@@ -104,6 +109,8 @@
       img {
         border-radius: 20px;
         width: 100%;
+        max-width: max-content;
+        max-height: 300px;
         object-fit: contain;
       }
       h3 {
