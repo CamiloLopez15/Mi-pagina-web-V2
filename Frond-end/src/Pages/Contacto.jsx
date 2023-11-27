@@ -12,7 +12,7 @@ function Contacto() {
   const [msg, setMsg] = useState('')
   const navigate = useNavigate();
 
-  const URL = 'http://localhost:8000/contacto'
+  const URL = "https://backend-mi-portafolio-web.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -51,7 +51,7 @@ function Contacto() {
             <button type="submit" className="Contacto__container__form__divContainer-btn">Enviar</button>
           </div>
         </form>
-        <div className="Contacto__container__info">
+        <div className="Contacto__container__info" style={{backgroundImage: 'url("fondo-formulario-3.jpg")'}}>
           <h2>Información sobre mí</h2>
           <div className="Contacto__container__info__infoContainer">
             <div className="Contacto__container__info__infoContainer-elemento">
