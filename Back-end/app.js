@@ -18,7 +18,9 @@ const enviarEmail = async (data) => {
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://camilolopez15.github.io"
+}));
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
