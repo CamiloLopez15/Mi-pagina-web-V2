@@ -2,11 +2,12 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import { transporter } from "./config/mailer.js";
+import {email} from "./../config.js"
 
 const enviarEmail = async (data) => {
   const info = await transporter.sendMail({
     from: data.email,
-    to: "camilolopez1506@gmail.com",
+    to: email,
     subject: data.asunto,
     html: `
       <b>Mi nombre es: ${data.nombre}</b>
