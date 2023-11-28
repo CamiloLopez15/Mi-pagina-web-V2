@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Footer from "./../Components/Footer";
 import { MdMap, MdContactMail, MdContactPhone, MdContacts } from "react-icons/md";
 import axios from "axios";
@@ -14,14 +14,30 @@ function Contacto() {
 
   const URL = "https://backend-mi-portafolio-web.onrender.com";
 
+  const refButtonEmail = useRef(null)
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await axios.post(URL, {
-      "nombre": nombre,
-      "email": email,
-      "asunto": asunto,
-      "msg": msg
+    // await axios.post(URL, {
+    //   "nombre": nombre,
+    //   "email": email,
+    //   "asunto": asunto,
+    //   "msg": msg
+    // })
+    const message = `
+      Hola mi nombre es: ${nombre}
+      Esta es mi mensaje...
+      ${msg}
+    `
+    await axios({
+      method: 'post',
+      url: "https://formspree.io/f/xjvqqopz",
+      data: {
+        email: email,
+        subject: asunto,
+        message: message
+      },
     })
     setNombre('');
     setEmail('');
@@ -43,11 +59,11 @@ function Contacto() {
           <h2>Enviame un mensaje</h2>
           <div className="Contacto__container__form__divContainer">
             <div className="Contacto__container__form__divContainer-encabezadoContainer">
-              <input className="Contacto__container__form__divContainer-nombre" type="text" placeholder="Nombre" value={nombre} onChange={e => setNombre(e.target.value)} required/>
-              <input className="Contacto__container__form__divContainer-email" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required/>
+              <input className="Contacto__container__form__divContainer-nombre" type="text" placeholder="Nombre" value={nombre} onChange={e => setNombre(e.target.value)} autoComplete="on" required/>
+              <input className="Contacto__container__form__divContainer-email" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} autoComplete="on" required/>
             </div>
-            <input className="Contacto__container__form__divContainer-asunto" type="text" placeholder="Asunto" value={asunto} onChange={e => setAsunto(e.target.value)} required/> <br/>
-            <textarea className="Contacto__container__form__divContainer-textArea" placeholder="Mensaje que me quieras comunicar" value={msg} onChange={e => setMsg(e.target.value)} required></textarea>
+            <input className="Contacto__container__form__divContainer-asunto" type="text" placeholder="Asunto" value={asunto} onChange={e => setAsunto(e.target.value)} autoComplete="on" required/> <br/>
+            <textarea className="Contacto__container__form__divContainer-textArea" placeholder="Mensaje que me quieras comunicar" value={msg} onChange={e => setMsg(e.target.value)} autoComplete="on" required></textarea>
             <button type="submit" className="Contacto__container__form__divContainer-btn">Enviar</button>
           </div>
         </form>
