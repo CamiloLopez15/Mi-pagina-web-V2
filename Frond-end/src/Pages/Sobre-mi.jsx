@@ -3,7 +3,7 @@ import FotoPerfil from "../assets/Fotos de Perfil/Foto de perfil-1.jpg";
 import Footer from "../Components/Footer";
 
 //Assets
-import hojaDeVida from "../assets/Hoja_de_vida_Camilo_Lopez.pdf";
+import hojaDeVida from "../assets/Hoja_de_vida_Camilo_Lopez_2024_1.pdf.pdf";
 import Certificado from "../Components/Certificado";
 import CertificadoJavaScript from "../assets/Certificados/Certificado-freecodecamp-JavaScript.png";
 import CertificadoReact from "../assets/Certificados/Certificado-freecodecamp-React.png";
