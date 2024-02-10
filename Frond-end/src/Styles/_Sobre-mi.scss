@@ -139,19 +139,21 @@
       order: 2;
       margin: 10% 0 0;
       display: flex;
+      align-items: center;
       flex-direction: column;
       h2 {
         text-align: center;
       }
       p {
-        text-align: center;
+        text-align: justify;
       }
       a {
         margin: 5% 0%;
+        width: 40%;
       }
     }
     img {
-      width: 80%;
+      width: 70%;
       order: 1;
     }
   }
@@ -223,6 +225,9 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .SobreMi-h1 {
+    font-size: 2.5em;
+  }
   .SobreMi__habilidades {
     margin-top: 10%;
     .SobreMi__habilidades__container {
@@ -257,7 +262,7 @@
       }
     }
     img {
-      width: 100%;
+      width: 80%;
     }
   }
   .sobreMi__certificados {

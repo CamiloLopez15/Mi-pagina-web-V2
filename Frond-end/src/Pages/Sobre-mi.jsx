@@ -3,7 +3,7 @@ import FotoPerfil from "../assets/Fotos de Perfil/Foto de perfil-1.jpg";
 import Footer from "../Components/Footer";
 
 //Assets
-import hojaDeVida from "../assets/Hoja_de_vida_Camilo_Lopez_2024_1.pdf.pdf";
+import hojaDeVida from "../assets/Hoja_de_vida_Camilo_Lopez_2024_1.pdf";
 import Certificado from "../Components/Certificado";
 import CertificadoJavaScript from "../assets/Certificados/Certificado-freecodecamp-JavaScript.png";
 import CertificadoReact from "../assets/Certificados/Certificado-freecodecamp-React.png";
@@ -123,7 +123,7 @@ function SobreMi() {
             </ul>
           </div>
         </section>
-        <section className="SobreMi__habilidades">
+        {/* <section className="SobreMi__habilidades">
           <h2 className="SobreMi__habilidades-h2">
             Mis <b>habilidades</b>
           </h2>
@@ -166,7 +166,7 @@ function SobreMi() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="sobreMi__certificados">
           <h2 className="SobreMi__certificados-h2">
