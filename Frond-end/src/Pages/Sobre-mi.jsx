@@ -64,7 +64,7 @@ function SobreMi() {
                     he ido <b>creando y realizando proyectos</b> que han
                     mejorado mis habilidades como programador, luego de eso
                     decidí hacer cursos muchos más extensos y especializados
-                    sobre el Frond-end de las páginas webs, donde aprendí mucho
+                    sobre el Front-end de las páginas webs, donde aprendí mucho
                     más sobre
                     <b>HTML, CSS, JavaScript</b>, en la actualidad gracias a
                     esto, he hecho cursos de <b>más de 600 horas</b> de
@@ -80,7 +80,7 @@ function SobreMi() {
                   <h3>Las tecnologías que manejo.</h3>
                   <p>
                     Cuento con habilidades y conocimiento en los siguientes
-                    lenguajes y tecnologías de <b>Frond-end:</b> HTML 5, CSS 3,
+                    lenguajes y tecnologías de <b>Front-end:</b> HTML 5, CSS 3,
                     ES6 o JavaScript, Bootstrap, React, jQuery, Redux, Sass.
                   </p>
                 </div>
