@@ -22,11 +22,11 @@ import CertificadoCodigoDepuracionGoogle from "../assets/Certificados/Certificad
 function SobreMi() {
   return (
     <>
-      <main className="SobreMi">
+      <section className="SobreMi">
         <h1 className="SobreMi-h1">
           Sobre <b>mí</b>
         </h1>
-        <section className="SobreMi-h1__descripcionContenedor">
+        <article className="SobreMi-h1__descripcionContenedor">
           <div className="descripcionContenedor__descripcion">
             <h2>
               Soy un <b>desarrollador web Full Stack</b> que actualmente vive en
@@ -48,8 +48,8 @@ function SobreMi() {
             </a>
           </div>
           <img src={FotoPerfil} />
-        </section>
-        <section className="SobreMi__historia" id="Sobre-mi">
+        </article>
+        <article className="SobreMi__historia" id="Sobre-mi">
           <h2 className="timelineH2">
             Mi <b>historia</b>
           </h2>
@@ -122,53 +122,8 @@ function SobreMi() {
               <div style={{ clear: "both" }}></div>
             </ul>
           </div>
-        </section>
-        {/* <section className="SobreMi__habilidades">
-          <h2 className="SobreMi__habilidades-h2">
-            Mis <b>habilidades</b>
-          </h2>
-
-          <div className="SobreMi__habilidades__container">
-            <div className="SobreMi__habilidades__container__item">
-              <h4>HTML</h4>
-              <div>
-                <div className="HTML">90%</div>
-              </div>
-            </div>
-            <div className="SobreMi__habilidades__container__item">
-              <h4>CSS</h4>
-              <div>
-                <div className="CSS">90%</div>
-              </div>
-            </div>
-            <div className="SobreMi__habilidades__container__item">
-              <h4>JavaScript</h4>
-              <div>
-                <div className="JavaScript">88%</div>
-              </div>
-            </div>
-            <div className="SobreMi__habilidades__container__item">
-              <h4>React</h4>
-              <div>
-                <div className="React">85%</div>
-              </div>
-            </div>
-            <div className="SobreMi__habilidades__container__item">
-              <h4>J Query</h4>
-              <div>
-                <div className="J-Query">80%</div>
-              </div>
-            </div>
-            <div className="SobreMi__habilidades__container__item">
-              <h4>Canvas</h4>
-              <div>
-                <div className="Canvas">95%</div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-        <section className="sobreMi__certificados">
+        </article>
+        <article className="sobreMi__certificados">
           <h2 className="SobreMi__certificados-h2">
             Mis <b>certificados</b>
           </h2>
@@ -256,8 +211,8 @@ function SobreMi() {
               }
             />
           </article>
-        </section>
-      </main>
+        </article>
+      </section>
       <Footer />
     </>
   );

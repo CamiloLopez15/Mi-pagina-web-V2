@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar({changeState, newState, logoMenu}) {
   return (
-    <div className="container__menu">
+    <header className="container__menu">
         <Link to={'/'}><img className="container__menu-logo" src={logo} /></Link>
         <nav className="container__menu__nav">
           <img
@@ -15,7 +15,7 @@ function Navbar({changeState, newState, logoMenu}) {
             }}
           />
         </nav>
-    </div>
+    </header>
   )
 }
 

@@ -38,6 +38,10 @@ function App() {
             path="/contacto"
             element={<Contacto />}
           />
+          <Route
+            path="/*"
+            element={<Inicio />}
+          />
         </Routes>
       </>
     );

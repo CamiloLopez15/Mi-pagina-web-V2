@@ -29,7 +29,7 @@ function Inicio() {
   }, []);
 
   return (
-    <div className="Inicio">
+    <section className="Inicio">
       <div className="container__info">
         <picture className="container__info__img">
           <img src={FotoPerfil}></img>
@@ -60,7 +60,7 @@ function Inicio() {
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

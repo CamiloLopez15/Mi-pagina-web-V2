@@ -13,12 +13,12 @@ import Proyecto from '../Components/Proyecto';
 
 function Portafolio() {
   return (
-    <>
+    <section>
       <div className='portafolioContenedor'>
-        <div className='portafolioContenedor__titulo'>
+        <header className='portafolioContenedor__titulo'>
           <h1><b>Mi</b> portafolio</h1>
           <h2>Mis proyectos más importantes</h2>
-        </div>
+        </header>
         <div className='portafolioContenedor__proyectos'>
         <Proyecto href="https://camilolopez15.github.io/Nutritious-snack/" img={Nutritious_snack} titulo="Nutritious Snack" descripcion="Esta página web la realicé como participación a un emprendimiento que tienen estudiantes del colegio en el que estudié, esta página web se basa en darles a los padres de familia menús de meriendas para sus hijos los siete días de la semana."/>
         <Proyecto href="https://camilolopez15.github.io/Easyeats/" img={Easyeats} titulo="EasyEats" descripcion="Actualmente, estoy desarrollando este proyecto, este se basa en una página web que genera recetas para las personas con inteligencia artificial, este seguirá unos parámetros para entregar estas recetas."/>
@@ -52,7 +52,7 @@ function Portafolio() {
         </div>
       </div>
       <Footer/>
-    </>
+    </section>
   )
 }
 

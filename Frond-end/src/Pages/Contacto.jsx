@@ -50,7 +50,7 @@ function Contacto() {
 
   return (
     <>
-      <div className="Contacto">
+      <section className="Contacto">
       <h1>
         Contacta<b>me</b>
       </h1>
@@ -67,9 +67,9 @@ function Contacto() {
             <button type="submit" className="Contacto__container__form__divContainer-btn">Enviar</button>
           </div>
         </form>
-        <div className="Contacto__container__info" style={{backgroundImage: 'url("fondo-formulario-3.jpg")'}}>
+        <article className="Contacto__container__info" style={{backgroundImage: 'url("fondo-formulario-3.jpg")'}}>
           <h2>Información sobre mí</h2>
-          <div className="Contacto__container__info__infoContainer">
+          <address className="Contacto__container__info__infoContainer">
             <div className="Contacto__container__info__infoContainer-elemento">
               <MdContacts className="Contacto__container__info__infoContainer-elemento-icon"/>
               <div>
@@ -98,10 +98,10 @@ function Contacto() {
                 camilolopez1506@gmail.com
               </div>
             </div>
-          </div>
-        </div>
+          </address>
+        </article>
       </div>
-      </div>
+      </section>
       <Footer/>
     </>
   );
